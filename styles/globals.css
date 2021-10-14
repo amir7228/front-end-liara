@@ -238,3 +238,121 @@ hr {
   border: none;
   border-radius: 5px;
 }
+
+.header {
+  height: 50px;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: rgb(29, 29, 32);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  box-shadow: 6px 6px 2px -3px black;
+}
+.header__left > h1 {
+  margin-left: 60px;
+}
+.header__right > p {
+  margin-right: 60px;
+}
+.footer {
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 6px 6px 2px -3px black;
+}
+.footer__up {
+  display: flex;
+  background-color: rgb(29, 29, 32);
+  height: 300px;
+}
+.footer__down {
+  background-color: rgb(27, 27, 77);
+  height: 150px;
+}
+.footer__left {
+  flex: 0.33;
+  padding: 20px;
+  margin-left: 10px;
+  width: 100%;
+}
+.footer__left > p {
+  margin-top: 20px;
+  text-align: left;
+  width: 90%;
+  font-size: 14px;
+}
+.footer__middle {
+  flex: 0.34;
+  padding: 20px;
+  margin-left: 10px;
+}
+
+.footer__right {
+  flex: 0.33;
+  padding: 20px;
+}
+.footer__lefticon {
+  margin-top: 10px;
+  display: flex;
+}
+.footer__lefticon > .MuiSvgIcon-root {
+  margin-right: 5px;
+  font-size: 40px;
+}
+.footer__middleimage {
+  display: flex;
+  align-items: center;
+}
+.footer__middleimage > .MuiSvgIcon-root {
+  font-size: 80px;
+  margin-top: 20px;
+  padding: 15px;
+  margin-right: 10px;
+  background-color: rgb(27, 27, 77);
+}
+.footer__right > h2 {
+  margin-bottom: 25px;
+}
+.footer__right > p {
+  margin-top: 25px;
+  font-size: 12px;
+  font-weight: 500;
+}
+.footer__down {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer__downleft {
+  margin-left: 40px;
+  font-size: 12px;
+  color: gray;
+}
+.footer__downright {
+  display: flex;
+  margin-right: 40px;
+}
+.footer__downright > h2 {
+  margin-right: 25px;
+  font-size: 20px;
+}
+@media only screen and (max-width: 1200px) {
+  .footer__middleimage > .MuiSvgIcon-root {
+    font-size: 60px;
+    padding: 15px;
+    margin-top: 40px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .footer__middleimage > .MuiSvgIcon-root {
+    font-size: 50px;
+    padding: 15px;
+  }
+}
