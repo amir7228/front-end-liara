@@ -138,8 +138,20 @@ hr {
   border-radius: 5px;
   outline-width: 0;
 }
+.input__file {
+  display: none;
+}
 .input__bottom {
   margin: 30px;
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px 5px;
+}
+.input__bottom > p {
+  font-size: 12px;
+  font-weight: 500;
 }
 .input__bottom2 {
   margin: 30px;
@@ -245,7 +257,7 @@ hr {
   position: sticky;
   top: 0;
   z-index: 100;
-  background-color: rgb(29, 29, 32);
+  background-color: rgb(56, 56, 56);
   color: white;
   display: flex;
   align-items: center;
@@ -268,11 +280,11 @@ hr {
 }
 .footer__up {
   display: flex;
-  background-color: rgb(29, 29, 32);
+  background-color: rgb(56, 56, 56);
   height: 300px;
 }
 .footer__down {
-  background-color: rgb(27, 27, 77);
+  background-color: #383838;
   height: 150px;
 }
 .footer__left {
@@ -314,7 +326,7 @@ hr {
   margin-top: 20px;
   padding: 15px;
   margin-right: 10px;
-  background-color: rgb(27, 27, 77);
+  background-color: #383838;
 }
 .footer__right > h2 {
   margin-bottom: 25px;

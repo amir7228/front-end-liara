@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import Project from "./Project";
 import { useRouter } from "next/dist/client/router";
-
-function Job() {
+import FileUploadOutlinedIcon from "@mui/icons-material/FileUploadOutlined";
+import PostData from "./posts.json";
+function Job({ searchResults }) {
+  console.log({ PostData });
   const [searchInput, setSearchInput] = useState("");
   const [descriptinInput, setDescriptionInput] = useState("");
   const [file, setFile] = useState("");
@@ -72,10 +74,16 @@ function Job() {
             </div>
             <div className="input__bottom">
               <input
+                className="input__file"
                 type="file"
                 value={file}
+                id="first"
                 onChange={(e) => setFile(e.target.value)}
               />
+              <p>برای انتخاب فایل ضربه بزنید</p>
+              <label htmlFor="first">
+                <FileUploadOutlinedIcon />
+              </label>
             </div>
             <div className="input__bottom2">
               <input
@@ -113,3 +121,15 @@ function Job() {
 }
 
 export default Job;
+
+export async function getServerSideProps() {
+  const searchResults = await fetch(
+    "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  ).then((res) => res.json());
+
+  return {
+    props: {
+      searchResults,
+    },
+  };
+}

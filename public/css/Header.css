@@ -1,0 +1,27 @@
+.bodyy {
+  direction: rtl;
+}
+.headerr {
+  background-color: white;
+  position: sticky;
+  z-index: 100;
+  top: 0;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  box-shadow: 10px 0px 8px -6px #888888;
+  justify-content: space-between;
+  padding: 20px;
+}
+.headerr__left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.headerr__option {
+  margin-left: 20px;
+}
+.headerr__right > p {
+  font-size: 25px;
+  font-weight: 900;
+}

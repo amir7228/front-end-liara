@@ -1,0 +1,14 @@
+.homee {
+  flex: 1;
+  background-color: #f3efef;
+}
+.home-1 {
+  background-color: white;
+  margin: 20px;
+  height: 100px;
+}
+.home-2 {
+  background-color: white;
+  margin: 20px;
+  height: 300px;
+}

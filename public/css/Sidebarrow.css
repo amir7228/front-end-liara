@@ -1,0 +1,13 @@
+.sidebarrow {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  align-items: center;
+  cursor: pointer;
+}
+.sidebarrow:hover {
+  background-color: #3b4248;
+}
+.sidebarrow > p {
+  font-size: 12px;
+}
