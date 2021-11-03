@@ -13,7 +13,7 @@ function Sidebar() {
       <head>
         <link rel="stylesheet" type="text/css" href="/css/Sidebar.css" />
       </head>
-      <body>
+      <body className="sidebarr">
         <div className="sidebar">
           <Sidebarrow Icon={HomeOutlinedIcon} title="خانه" />
           <Sidebarrow Icon={PlaylistAddOutlinedIcon} title="پیام ها" />
