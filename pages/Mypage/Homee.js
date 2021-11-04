@@ -11,7 +11,7 @@ function Homee() {
         <div className="home__1">
           <div className="home__1right">
             <AccountCircleOutlinedIcon />
-            <h3>محمد احمدی</h3>
+            <h3>محمد </h3>
             <p>پروفایل من</p>
           </div>
           <div className="home__1left">

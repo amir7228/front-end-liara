@@ -14,6 +14,7 @@ body {
 .job {
   background-color: rgb(223, 223, 223);
   display: flex;
+  width: 100%;
 }
 .job__left {
   flex: 0.6;
@@ -360,6 +361,9 @@ hr {
     font-size: 60px;
     padding: 15px;
     margin-top: 40px;
+  }
+  .job {
+    display: table;
   }
 }
 @media only screen and (max-width: 1000px) {

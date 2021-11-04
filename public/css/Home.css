@@ -23,6 +23,9 @@
 }
 .home__1right > p {
   margin-right: 10px;
+  color: gray;
+  font-size: 12px;
+  cursor: pointer;
 }
 .home__1left {
   display: flex;
