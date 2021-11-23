@@ -7,7 +7,7 @@ function Header() {
         <h1>wersam</h1>
       </div>
       <div className="header__right">
-        <p>about</p>{" "}
+        <p>about</p>
       </div>
     </div>
   );
