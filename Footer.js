@@ -3,6 +3,7 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookSharpIcon from "@mui/icons-material/FacebookSharp";
 import ImageIcon from "@mui/icons-material/Image";
+import { Button } from "@mui/material";
 function Footer() {
   return (
     <div className="footer">
@@ -47,11 +48,11 @@ function Footer() {
           <p>loading</p>
         </div>
         <div className="footer__downright">
-          <h2>Work</h2>
-          <h2>Service</h2>
-          <h2>ABOUT</h2>
-          <h2>BLOG</h2>
-          <h2>COMPANY</h2>
+          <Button>Work</Button>
+          <Button>Service</Button>
+          <Button>ABOUT</Button>
+          <Button>BLOG</Button>
+          <Button>COMPANY</Button>
         </div>
       </div>
     </div>
