@@ -13,9 +13,14 @@ export default function Home() {
         <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200&family=Roboto:ital,wght@0,400;1,300;1,400;1,500&display=swap" rel="stylesheet" />
 
       </Head>
-      <Header />
+      <div>
+        <Header />
+      </div>
       <Job />
-      <Footer />
+      <div>
+        <Footer />
+      </div>
+
     </div>
   );
 }

@@ -39,6 +39,7 @@ function Job({ searchResults }) {
 
   const handleChange = (panel) => (event, isExpanded) => {
     setExpanded(isExpanded ? panel : false);
+
   };
   const handleClickOpen = () => {
     setOpen(true);
@@ -50,7 +51,10 @@ function Job({ searchResults }) {
 
   const Send = (e) => {
     e.preventDefault();
+
   };
+  const [front, setFront] = useState("");
+  console.log(front);
   return (
     <div className="job">
       <div className="job__left">
@@ -60,41 +64,48 @@ function Job({ searchResults }) {
 
         <form className="form">
           <div className="options">
-            <Accordion style={{ width: "60%", marginRight: "20px" }} expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
+            <Accordion style={{ width: "250px", marginRight: "20px" }} expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
               <AccordionSummary
                 expandIcon={<ExpandMoreIcon />}
                 aria-controls="panel1bh-content"
                 id="panel1bh-header"
               >
-                <Typography sx={{ width: '33%', flexShrink: 0 }}>
-                  General settings
+                <Typography sx={{ width: '66%', flexShrink: 0 }}>
+                  قرانت اتد
                 </Typography>
-                <Typography sx={{ color: 'text.secondary' }}>I am an accordion</Typography>
+                <Typography sx={{ color: 'text.secondary' }}></Typography>
               </AccordionSummary>
               <AccordionDetails>
                 <FormControl component="fieldset">
-                  <FormLabel component="legend">Gender</FormLabel>
+                  <FormLabel component="legend">فریمورک</FormLabel>
                   <RadioGroup
                     aria-label="gender"
                     defaultValue="female"
                     name="radio-buttons-group"
+                    value={front} onChange={(e) => { setFront(e.target.value) }}
                   >
-                    <FormControlLabel value="female" control={<Radio />} label="Female" />
-                    <FormControlLabel value="male" control={<Radio />} label="Male" />
-                    <FormControlLabel value="other" control={<Radio />} label="Other" />
+                    <FormControlLabel value="React" control={<Radio />} label="React" />
+                    {front === 'React' ? (
+                      <RadioGroup>
+                        <FormControlLabel style={{ fontSize: "40px" }} value="js" control={<Radio />} label="java script" />
+                        <FormControlLabel value="ts" control={<Radio />} label="Type script" />
+                      </RadioGroup>
+                    ) : (<></>)}
+                    <FormControlLabel value="Angular" control={<Radio />} label="Angular" />
+                    <FormControlLabel value="Vue" control={<Radio />} label="Vue" />
                   </RadioGroup>
                 </FormControl>
               </AccordionDetails>
             </Accordion>
-            <Accordion style={{ width: "60%", marginRight: "20px" }} expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
+            <Accordion style={{ width: "250px", marginRight: "20px" }} expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
               <AccordionSummary
                 expandIcon={<ExpandMoreIcon />}
                 aria-controls="panel2bh-content"
                 id="panel2bh-header"
               >
-                <Typography sx={{ width: '33%', flexShrink: 0 }}>Users</Typography>
+                <Typography sx={{ width: '33%', flexShrink: 0 }}>بک اند</Typography>
                 <Typography sx={{ color: 'text.secondary' }}>
-                  You are currently not an owner
+
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
@@ -112,17 +123,17 @@ function Job({ searchResults }) {
                 </FormControl>
               </AccordionDetails>
             </Accordion>
-            <Accordion style={{ width: "60%", marginRight: "20px" }} expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
+            <Accordion style={{ width: "250px", marginRight: "20px" }} expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
               <AccordionSummary
                 expandIcon={<ExpandMoreIcon />}
                 aria-controls="panel3bh-content"
                 id="panel3bh-header"
               >
                 <Typography sx={{ width: '33%', flexShrink: 0 }}>
-                  Advanced settings
+                  گرافیک
                 </Typography>
                 <Typography sx={{ color: 'text.secondary' }}>
-                  Filtering has been entirely disabled for whole web server
+
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
@@ -140,13 +151,13 @@ function Job({ searchResults }) {
                 </FormControl>
               </AccordionDetails>
             </Accordion>
-            <Accordion style={{ width: "60%", marginRight: "20px" }} expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
+            <Accordion style={{ width: "250px", marginRight: "20px" }} expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
               <AccordionSummary
                 expandIcon={<ExpandMoreIcon />}
                 aria-controls="panel4bh-content"
                 id="panel4bh-header"
               >
-                <Typography sx={{ width: '33%', flexShrink: 0 }}>Personal data</Typography>
+                <Typography sx={{ width: '33%', flexShrink: 0 }}>طراحی</Typography>
               </AccordionSummary>
               <AccordionDetails>
                 <FormControl component="fieldset">

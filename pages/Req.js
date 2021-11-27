@@ -7,7 +7,12 @@ import FileUploadOutlinedIcon from "@mui/icons-material/FileUploadOutlined";
 import Header from "../Header";
 import Footer from "../Footer";
 import SendIcon from '@mui/icons-material/Send';
-import { DatePicker } from "jalali-react-datepicker";
+import AppBar from '@mui/material/AppBar';
+import Box from '@mui/material/Box';
+import Toolbar from '@mui/material/Toolbar';
+import Typography from '@mui/material/Typography';
+import IconButton from '@mui/material/IconButton';
+import MenuIcon from '@mui/icons-material/Menu';
 function Req() {
   const router = useRouter();
   const submit = (e) => {
@@ -19,8 +24,18 @@ function Req() {
 
   const [file, setFile] = useState("");
   return (
-    <div>
-      <Header />
+    <div >
+      {/* <Header /> */}
+      <AppBar position="static">
+        <Toolbar variant="dense">
+          <IconButton edge="start" color="inherit" aria-label="menu" sx={{ mr: 2 }}>
+            <MenuIcon />
+          </IconButton>
+          <Typography variant="h6" color="inherit" component="div">
+            Photos
+          </Typography>
+        </Toolbar>
+      </AppBar>
       <div className="request">
         <div className="request__left">
           <div className="request__leftheader">
@@ -38,7 +53,7 @@ function Req() {
 
           </div>
           <div className="chat__second" >
-            <p>سلام</p>
+            <p> تسنش  ستیسم سمیکشس مسئشکسمی سمئطسلام</p>
             <Avatar src="https://yt3.ggpht.com/cb6holW0DAVnS25D6WlT2D_mm4sGOOZlojOJeGBRn0rrIn6bJ-Nmnx6y-2dWzzxEX7s_V6Zpqw=s48-c-k-c0x00ffffff-no-rj" />
 
 
